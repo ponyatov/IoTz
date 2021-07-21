@@ -1,0 +1,43 @@
+{
+    // \ multi
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.f11",
+            "sequence": [
+                "workbench.action.files.saveAll",
+                {"command": "workbench.action.terminal.sendSequence",
+                    "args": {"text": "\u000D clear ; make repl \u000D"}}
+            ]
+        },
+        {
+            "command": "multiCommand.f12",
+            "sequence": [
+                "workbench.action.files.saveAll",
+                {"command": "workbench.action.terminal.sendSequence",
+                    "args": {"text": "\u000Dos._exit(0)\u000D"}}
+            ]
+        },
+    ],
+    // / multi
+
+    // \ files
+    "files.watcherExclude": {
+        "**/docs/**":true,
+    },
+    "files.exclude": {
+        "**/docs/**":true,
+    },
+    "files.associations": {
+    },
+    // / files
+
+    // \ editor
+    "editor.tabSize": 4,
+    "editor.rulers": [80],
+    "workbench.tree.indent": 32,
+    // / editor
+
+    // \ misc
+    "browser-preview.startUrl": "127.0.0.1:15652/"
+    // / misc
+}
